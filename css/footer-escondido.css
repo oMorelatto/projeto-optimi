@@ -1,0 +1,90 @@
+@charset "UTF-8";
+html {
+  font-size: 87.5%;
+}
+:root {
+  --cor-violeta-alx: #6bb3bc;
+}
+
+body {
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1;
+}
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #fefeff;
+
+  position: relative;
+  overflow-x: hidden;
+}
+* {
+  outline: none;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.faixa-cookie {
+  left: 16px;
+  right: 16px;
+  z-index: 99;
+  bottom: 16px;
+  margin: auto;
+  display: flex;
+  position: fixed;
+  max-width: 1334px;
+  transition: all 0.7s;
+  background-color: #fff;
+  border: solid 1px #eee;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
+}
+.faixa-cookie.escondido {
+  bottom: -1000px;
+  transition: all 0.7s;
+}
+.faixa-cookie .faixa-cookie-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: inherit;
+  justify-content: space-between;
+}
+.faixa-cookie .faixa-cookie-p {
+  margin: 0;
+  color: #333;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.45px;
+  text-align: left;
+}
+.faixa-cookie .faixa-cookie-p a {
+  color: #02104d;
+}
+.faixa-cookie .faixa-cookie-p a:hover {
+  text-decoration: underline !important;
+}
+.faixa-cookie .faixa-cookie-botao {
+  padding: 16px 16px 16px 0;
+}
+.faixa-cookie .faixa-cookie-botao-link {
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 3px;
+  background: #000;
+  text-transform: uppercase;
+}
+.faixa-cookie .faixa-cookie-botao-link:hover {
+  transition: 0.3s ease;
+  background-color: var(--cor-violeta-alx);
+  cursor: pointer;
+}
